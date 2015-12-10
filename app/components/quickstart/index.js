@@ -11,23 +11,19 @@ export default class Quickstart extends React.Component {
                     <h2>Get started</h2>
                     <div className={styles.columnWrapper}>
                         <div className={styles.column}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum.
+                            <div
+                                className="markdown-body"
+                                dangerouslySetInnerHTML={{__html: require('../../../docs/QUICKSTART-1.md')}}
+                            />
                         </div>
                         <div className={styles.column}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum.
+                            <div
+                                className="markdown-body"
+                                dangerouslySetInnerHTML={{__html: require('../../../docs/QUICKSTART-2.md')}} 
+                            />
                         </div>
                     </div>
-                    <Link className={styles.moreButton} to="start">Learn more</Link>
+                    <Link className={styles.moreButton} to="start#">Learn more</Link>
                 </div>
             </div>
         );
