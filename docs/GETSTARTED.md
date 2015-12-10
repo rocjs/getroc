@@ -135,7 +135,7 @@ For now please look at the code, a more detailed example is forthcoming.
 - [React](https://facebook.github.io/react/)
 - [React Router](https://github.com/rackt/react-router)
 - [React Helmet](https://github.com/nfl/react-helmet)
-- [React Fetcher](https://github.com/markdalgleish/react-fetcher
+- [React Fetcher](https://github.com/markdalgleish/react-fetcher)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 - [Redux Fetcher](https://github.com/vgno/redux-fetcher)
 - [Redux API Middleware](https://github.com/vgno/redux-api-middleware)
