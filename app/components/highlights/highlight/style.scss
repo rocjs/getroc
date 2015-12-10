@@ -1,0 +1,16 @@
+.highlight {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+    width: 33%;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+
+}
+.bruk {
+    composes: image;
+    // Todo: add background-image-pointer to asset
+}
