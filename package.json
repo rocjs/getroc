@@ -1,0 +1,11 @@
+{
+  "name": "getroc.org",
+  "version": "1.0.0",
+  "description": "Get started with Roc",
+  "roc": "^1.0.0-alpha",
+  "author": "VG",
+  "license": "MIT",
+  "dependencies": {
+    "roc-web-react": "*"
+  }
+}
