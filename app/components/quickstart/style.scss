@@ -1,10 +1,6 @@
 .quickstart {
     background: #fff;
     text-align: center;
-
-    h3 {
-        margin-bottom: 20px;
-    }
 }
 
 .column {
@@ -18,10 +14,22 @@
 }
 
 
+@media (max-width: 600px) {
+    .column  {
+        width: 100%;
+    }
+
+    .moreButton {
+        width: 100%;
+    }
+}
+
+
+
 .moreButton {
     display: inline-block;
-    padding: 5px 20px;
-    margin-bottom: 0;
+    padding: 5px 40px;
+    margin: 20px 0px;
     font-size: 14px;
     font-weight: 600;
     text-align: center;
