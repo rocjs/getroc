@@ -2,20 +2,22 @@ import React from 'react';
 
 import styles from './style.scss';
 
+import Highlight from './highlight';
+
 export default class Highlights extends React.Component {
     render() {
         return (
             <div className={styles.highlights}>
                 <h1>Highlights</h1>
-                <div className={styles.column}>
+                <Highlight image="bruk">
                     Bruk
-                </div>
-                <div className={styles.column}>
+                </Highlight> 
+                <Highlight image="ROC">
                     ROC
-                </div>
-                <div className={styles.column}>
+                </Highlight>
+                <Highlight image="naa">
                     nå!
-                </div>
+                </Highlight>
             </div>
         );
     }
