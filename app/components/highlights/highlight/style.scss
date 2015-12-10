@@ -2,15 +2,64 @@
     vertical-align: top;
     display: inline-block;
     padding: 5px;
-    width: 33%;
+    width: 50%;
+    text-align: left;
+}
+
+.text {
+    display: inline-block;
+    //width: calc(50% - 50px);
+    text-align: left;
+    vertical-align: top;
+    width: 70%;
 }
 
 .image {
-    width: 100px;
-    height: 100px;
+    vertical-align: top;
+    //float: left;
+    text-align: left;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
     background-image: url('./assets/cat.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-right: 8px;
+    margin-top: 24px;
 }
-.bruk {
+
+.consistency {
     composes: image;
-    // Todo: add background-image-pointer to asset
+    background-image: url('./assets/cellphone106.svg');
+}
+
+.composition {
+    composes: image;
+    background-image: url('./assets/computing29.svg');
+}
+
+.automation {
+    composes: image;
+    background-image: url('./assets/internet54.svg');
+}
+
+.developerux {
+    composes: image;
+    background-image: url('./assets/robots9.svg');
+}
+
+.dynamicconfig {
+    composes: image;
+    background-image: url('./assets/three115.svg');
+}
+
+.reduceboiler {
+    composes: image;
+    background-image: url('./assets/user36.svg');
+}
+
+.reactredux {
+    composes: image;
+    background-image: url('./assets/website21.svg');
 }
