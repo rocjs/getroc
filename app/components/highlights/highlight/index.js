@@ -9,7 +9,7 @@ export default class Highlight extends React.Component {
     }
 
     render() {
-        return(
+        return (
             <div className={styles.highlight}>
                 <div className={(this.props.image in styles) ? styles[this.props.image] : styles.image} />
                 <div className={styles.text}>

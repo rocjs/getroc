@@ -16,11 +16,12 @@ export default class Highlights extends React.Component {
                     </Highlight>
                     <Highlight image="composition">
                         <h4>Composition</h4>
-                        Roc bundles your favourite modern development technologies into extendable modules ready for use.
+                        Roc bundles your favourite modern development technologies
+                        into extendable modules ready for use.
                     </Highlight>
                     <Highlight image="automation">
                         <h4>Automation</h4>
-                        `build`, `develop` and `test` using dedicated and easy-to-use tooling.
+                        <em>build</em>, <em>develop</em> and <em>test</em> using dedicated and easy-to-use tooling.
                     </Highlight>
                     <Highlight image="developerux">
                         <h4>Developer UX</h4>
@@ -28,15 +29,16 @@ export default class Highlights extends React.Component {
                     </Highlight>
                     <Highlight image="dynamicconfig">
                         <h4>Dynamic Configuration</h4>
-                        Dedicated configuration system that integrates directly with the Roc `cli`.
+                        Dedicated configuration system that integrates directly with the Roc CLI.
                     </Highlight>
                     <Highlight image="reduceboiler">
                         <h4>Reduce boilerplate</h4>
                         The versioned extensions embed boilerplate so that it does not pollute your application.
                     </Highlight>
                     <Highlight image="reactredux">
-                        <h4>React w/ Redux</h4>
-                        One of the most developed extensions provides a great starting point for a `universal` web application using `react`, `react-router` and `redux`.
+                        <h4>React + Redux</h4>
+                        One of the most developed extensions provides a great starting point for a universal web
+                        application using <em>React</em>, <em>React Router</em> and <em>Redux</em>.
                     </Highlight>
                 </div>
             </div>
