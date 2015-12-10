@@ -14,7 +14,7 @@ module.exports = {
         };
     },
     config: {
-        applicationName: 'getroc.org - get started developing today!',
+        applicationName: 'Roc - Get started developing today!',
         port: 3000,
         serve: ['public', 'build/client'],
         favicon: 'favicon.png',
