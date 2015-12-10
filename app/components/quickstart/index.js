@@ -8,7 +8,7 @@ export default class Quickstart extends React.Component {
         return (
             <div className={styles.quickstart}>
                 <div className="wrapper">
-                    <h2>Get started</h2>
+                    <h3>Get started</h3>
                     <div className={styles.columnWrapper}>
                         <div className={styles.column}>
                             <div

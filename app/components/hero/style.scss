@@ -2,16 +2,20 @@
     background-image: url('./assets/hero.jpg');
     height: 380px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
     color: #fff;
 
+    @media screen and (min-width: 540px){
+      padding-top: 20px;
+    }
     h1 {
         text-transform: uppercase;
-        margin-bottom: 20px;
     }
 }
 
-
+h2{
+  margin-top: 30px;
+}
 .install {
     display: inline-block;
     background: #2b303b;
@@ -20,6 +24,10 @@
     font-family: monospace;
     font-size: 18px;
     line-height: 1.2;
-    margin-top: 40px;
+    margin-top: 10px;
     padding: 16px 32px;
+
+    @media screen and (min-width: 540px){
+      margin-top: 40px;
+    }
 }
