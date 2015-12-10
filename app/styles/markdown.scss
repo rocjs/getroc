@@ -468,7 +468,7 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f7f7f7;
+  background-color: #F3F3F3;
   border-radius: 3px;
 }
 
@@ -479,6 +479,7 @@
 
 .markdown-body pre {
   word-wrap: normal;
+  margin-bottom: 40px;
 }
 
 .markdown-body pre code {
