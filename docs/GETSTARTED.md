@@ -1,4 +1,4 @@
-# Get started
+# Getting started with Roc
 
 ## Install
 Make sure you have node 4.x or higher and npm 3.x or higher on your system.
