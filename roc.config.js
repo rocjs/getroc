@@ -16,7 +16,7 @@ module.exports = {
     config: {
         applicationName: 'getroc.org - get started developing today!',
         port: 3000,
-        serve: ['public'],
+        serve: ['public', 'build/client'],
         favicon: 'favicon.png',
         link: [{
             rel: 'icon', href: '/favicon.png'
