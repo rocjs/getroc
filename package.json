@@ -1,21 +1,23 @@
 {
-    "name": "getroc.org",
-    "version": "1.0.0",
-    "description": "Get started with Roc",
-    "roc": "^1.0.0-alpha",
-    "author": "VG",
-    "license": "MIT",
-    "scripts": {
-        "test": "npm run lint",
-        "lint": "eslint ."
-    },
-    "dependencies": {
-        "roc-web-react": "*"
-    },
-    "devDependencies": {
-        "babel-eslint": "~4.1.6",
-        "eslint": "~1.10.3",
-        "eslint-config-vgno": "~5.0.0",
-        "eslint-plugin-react": "~3.11.3"
-    }
+  "name": "getroc.org",
+  "version": "1.0.0",
+  "description": "Get started with Roc",
+  "roc": "^1.0.0-alpha",
+  "author": "VG",
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "html-loader": "~0.4.0",
+    "markdown-loader": "~0.1.7",
+    "roc-web-react": "*"
+  },
+  "devDependencies": {
+    "babel-eslint": "~4.1.6",
+    "eslint": "~1.10.3",
+    "eslint-config-vgno": "~5.0.0",
+    "eslint-plugin-react": "~3.11.3"
+  }
 }
