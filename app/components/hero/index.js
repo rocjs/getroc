@@ -5,8 +5,12 @@ export default class Hero extends React.Component {
     render() {
         return (
             <div className={styles.hero}>
-                ROC
+                <div className="wrapper">
+                    <h1>Roc</h1>
+                    <h2>Modern webdevelopment system</h2>
+                    <code className={styles.install}>npm install roc -g</code>
+                </div>
             </div>
-            )
+        );
     }
 }

@@ -7,10 +7,10 @@ export default class Footer extends React.Component {
             <div className={styles.footer}>
                 <div className="wrapper">
                     <span className={styles.left}>
-                        <a href="https://github.com/vgno/roc">Github</a>
+                        <a className={styles.github} href="https://github.com/vgno/roc"></a>
                     </span>
                     <span className={styles.right}>
-                        by <a href="http://www.vg.no">VG</a>
+                        <a className={styles.vg} href="http://www.vg.no"></a>
                     </span>
                 </div>
             </div>
