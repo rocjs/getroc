@@ -6,7 +6,7 @@ import styles from './style.scss';
 
 export default class App extends React.Component {
     static propTypes = {
-        children: React.PropTypes.array.isRequired
+        children: React.PropTypes.object.isRequired
     }
 
     render() {
