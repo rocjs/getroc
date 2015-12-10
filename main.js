@@ -2,6 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
+import Menu from './menu';
 import { click } from './clicker';
 
 import styles from './style.scss';
@@ -26,13 +27,10 @@ export default class Main extends React.Component {
     render() {
         return (
             <div className={styles.main}>
-                <h1>Getroc.org</h1>
-                <div>
-                    { this.props.clicker } <button onClick={ this.props.click }>Click me!</button>
-                </div>
-                <p>
-                    Get Roc!
-                </p>
+                <Menu/>
+                {
+                    this.props.children
+                }
             </div>
         );
     }
