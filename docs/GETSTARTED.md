@@ -5,7 +5,7 @@ This guide will walk you through how to set up your first project using React. T
 ## Install
 Make sure you have Node.js 4.x or higher and npm 3.x or higher on your system.
 
-__Currently only supported in Mac and Windows.__
+__Currently only supported in Mac and Linux.__
 
 ```
 npm install -g roc
