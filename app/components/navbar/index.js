@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { IndexLink, Link } from 'react-router';
 import styles from './style.scss';
 
 export default class Menu extends React.Component {
@@ -9,10 +9,10 @@ export default class Menu extends React.Component {
                 <div className="wrapper">
                     <ul>
                         <li>
-                            <Link to="/">Roc</Link>
+                            <IndexLink to="/" className={styles.a} activeClassName={styles.active}>Roc</IndexLink>
                         </li>
                         <li>
-                            <Link to="start">Get started</Link>
+                            <Link to="/start" className={styles.a} activeClassName={styles.active}>Get started</Link>
                         </li>
                     </ul>
                 </div>
