@@ -7,15 +7,20 @@ roc dev --help
 
 #### Build for production
 ```js
-roc build && roc start
+roc build
+```
+
+#### Start in production
+```js
+roc start
 ```
 
 ### Questions
 
 #### Is this production ready?
 
-It is in active development but it should be ready right now!
+It is in active development, but please start experimenting today!
 
 #### Will this be abandoned tomorrow?
 
-No! VG have have a long plan for Roc going forward.
+No! VG has have a long plan for Roc going forward.
