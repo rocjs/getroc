@@ -1,5 +1,7 @@
 import React from 'react';
 
+const hero = require('../../../public/HERO.md');
+
 export default class GetStarted extends React.Component {
     render() {
         return (
@@ -8,6 +10,7 @@ export default class GetStarted extends React.Component {
                 <p>
                     Get started components here!
                 </p>
+                <div className="markdown-body" dangerouslySetInnerHTML={{__html: hero}} />
             </div>
         );
     }
