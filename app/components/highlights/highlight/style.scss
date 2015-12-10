@@ -1,17 +1,29 @@
 .highlight {
     vertical-align: top;
     display: inline-block;
-    padding: 5px;
+    padding: 10px 20px;
     width: 50%;
     text-align: left;
+    margin-bottom: 15px;
+
+    h4 {
+        margin-bottom: 10px;
+    }
 }
+
+@media (max-width: 600px) {
+    .highlight  {
+        width: 100%;
+    }
+}
+
 
 .text {
     display: inline-block;
-    //width: calc(50% - 50px);
+    width: calc(100% - 65px);
     text-align: left;
     vertical-align: top;
-    width: 70%;
+    font-weight: 300;
 }
 
 .image {
@@ -25,8 +37,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
-    margin-right: 8px;
-    margin-top: 24px;
+    margin-right: 15px;
 }
 
 .consistency {

@@ -9,33 +9,33 @@ export default class Highlights extends React.Component {
         return (
             <div className={styles.main}>
                 <div className="wrapper">
-                    <h2>Highlights</h2>
+                    <h3>Highlights</h3>
                     <Highlight image="consistency">
-                        <h3>Consistency</h3>
+                        <h4>Consistency</h4>
                         Handle all your apps and components in a consistent way.
                     </Highlight>
                     <Highlight image="composition">
-                        <h3>Composition</h3>
+                        <h4>Composition</h4>
                         Roc bundles your favourite modern development technologies into extendable modules ready for use.
                     </Highlight>
                     <Highlight image="automation">
-                        <h3>Automation</h3>
+                        <h4>Automation</h4>
                         `build`, `develop` and `test` using dedicated and easy-to-use tooling.
                     </Highlight>
                     <Highlight image="developerux">
-                        <h3>Developer UX</h3>
+                        <h4>Developer UX</h4>
                         Roc extensions for a given composition provide the best developer experience out of the box.
                     </Highlight>
                     <Highlight image="dynamicconfig">
-                        <h3>Dynamic Configuration</h3>
+                        <h4>Dynamic Configuration</h4>
                         Dedicated configuration system that integrates directly with the Roc `cli`.
                     </Highlight>
                     <Highlight image="reduceboiler">
-                        <h3>Reduce boilerplate</h3>
+                        <h4>Reduce boilerplate</h4>
                         The versioned extensions embed boilerplate so that it does not pollute your application.
                     </Highlight>
                     <Highlight image="reactredux">
-                        <h3>React w/ Redux</h3>
+                        <h4>React w/ Redux</h4>
                         One of the most developed extensions provides a great starting point for a `universal` web application using `react`, `react-router` and `redux`.
                     </Highlight>
                 </div>
