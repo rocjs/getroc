@@ -1,0 +1,20 @@
+.footer {
+    background-color: #ddd;
+    height: 20px;
+    width: 100%;
+}
+
+.align {
+    display: inline-block;
+    width: 50%;
+}
+
+.left {
+    composes: align;
+    text-align: left;
+}
+
+.right {
+    composes: align;
+    text-align: right;
+}
