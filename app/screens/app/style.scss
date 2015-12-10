@@ -2,8 +2,28 @@ body {
     background: #ddd;
     font-family: 'Lato';
     font-size: 16px;
+    font-weight: 300;
 }
-
+h1{
+  font-family: 'Rajdhani';
+  font-size: 80px;
+  font-weight: 800;
+  text-align: center;
+}
+h2{
+  font-family: 'Rajdhani';
+  font-size: 35px;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+h3{
+  font-family: 'Rajdhani';
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
 .main {
     background: #fff;
     margin: auto;
