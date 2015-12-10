@@ -5,7 +5,7 @@ import styles from './style.scss';
 export default class Highlight extends React.Component {
     static propTypes = {
         image: React.PropTypes.string.isRequired,
-        children: React.PropTypes.object.isRequired
+        children: React.PropTypes.node.isRequired
     }
 
     render() {
