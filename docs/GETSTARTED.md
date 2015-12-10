@@ -1,6 +1,6 @@
 # Getting started with Roc
 
-This guide will walk you through how to set up your first project using React. This is just one example on how an application can be created. More guides and and documentation are forthcoming.
+This guide will walk you through how to set up your first project using React. This is just one example on how an application can be created. More guides and and documentation is on the way.
 
 ## Install
 Make sure you have Node.js 4.x or higher and npm 3.x or higher on your system.
@@ -22,7 +22,7 @@ Bootstrap app starting point:
 roc init web-react
 ```
 ### Tip
-`web-react` is an alias to `vgno/roc-base-web-react`, a [repository location](https://github.com/vgno/roc-template-web-react) on Github. This template then uses the [roc-web-react](https://github.com/vgno/roc-web-react) extension. You can use your own repository by running `roc init GITHUB_USER/REPO`. How to crete that is outside of this guide.
+`web-react` is an alias to `vgno/roc-base-web-react`, a [repository location](https://github.com/vgno/roc-template-web-react) on Github. This template then uses the [roc-web-react](https://github.com/vgno/roc-web-react) extension. You can use your own repository by running `roc init GITHUB_USER/REPO`.
 
 You _can_ create your own extensions but that is outside the scope of this guide.
 
@@ -45,7 +45,7 @@ This prints all options that you can use to configure your current application. 
 ## Default project structure
 The basic template defines this for you, but you may modify it to use an entirely different structure easily through `roc.config.js`.
 
-Roc don't enforce any set structure on you and can be configured to a high degree.
+Roc does not enforce any set structure on you and can be configured.
 ```
 ├── app
 │   ├── components
@@ -112,19 +112,11 @@ roc start
 
 # Additional documentation
 
-## How to: add a route
-For now please look at the code, a more detailed example is forthcoming.
-
 ## How to: add a component
-For now please look at the code, a more detailed example is forthcoming.
+For now please look at the code, a more detailed example is coming.
 
-## How to: add an action
-For now please look at the code, a more detailed example is forthcoming.
-
-
-## How to: add a reducer
-For now please look at the code, a more detailed example is forthcoming.
-
+## How to: add a route
+For now please look at the code, a more detailed example is coming.
 
 ## How to: modify elements in document `<head>`
 `roc-web-react` uses React Helmet. You may use this to modify the appropriate settings easily from your components or by using the configuration. Please see [React Helmet´s documentation](https://github.com/nfl/react-helmet#react-helmet) or use `roc dev --help`.
