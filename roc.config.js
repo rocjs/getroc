@@ -18,13 +18,7 @@ module.exports = {
         port: 3000,
         serve: ['public', 'build/client'],
         favicon: 'favicon.png',
-        link: [{
-            rel: 'icon', href: '/favicon.png'
-        }, {
-            href: 'http://fonts.googleapis.com/css?family=Lato:100,300,400',
-            rel: 'stylesheet',
-            type: 'text/css'
-        }],
+        link: [],
         build: {
             assets: ['roc-web-react/styles/base.scss', 'app/styles/markdown.scss'],
             reducers: 'app/redux/reducers.js',
