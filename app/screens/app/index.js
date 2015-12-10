@@ -14,7 +14,9 @@ export default class App extends React.Component {
         return (
             <div className={styles.main}>
                 <Navbar />
-                { this.props.children }
+                <div className="wrapper">
+                    { this.props.children }
+                </div>
                 <Footer />
             </div>
         );

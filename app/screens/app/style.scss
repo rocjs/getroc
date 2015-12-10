@@ -1,6 +1,19 @@
 .main {
     background: #fff;
-    width: 700px;
     margin: auto;
-    padding: 20px;
+}
+
+:global {
+    .wrapper {
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+    }
+
+    @media (min-width: 600px) {
+        .wrapper {
+            width: 600px;
+            margin: auto;
+        }
+    }
 }

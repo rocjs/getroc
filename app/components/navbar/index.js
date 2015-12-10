@@ -5,9 +5,17 @@ import styles from './style.scss';
 export default class Menu extends React.Component {
     render() {
         return (
-            <div>
-                <Link className={styles.a} to="/">Roc</Link>
-                <Link className={styles.a} to="start">Get started</Link>
+            <div className={styles.navbar}>
+                <div className="wrapper">
+                    <ul>
+                        <li>
+                            <Link to="/">Roc</Link>
+                        </li>
+                        <li>
+                            <Link to="start">Get started</Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
         );
     }
