@@ -10,7 +10,7 @@ export default class Footer extends React.Component {
                         <a className={styles.github} href="https://github.com/vgno/roc"></a>
                     </span>
                     <span className={styles.right}>
-                        An open source project by
+                        Icons by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from <a href="http://flaticon.com" target="_blank">Flaticon</a>  | An open source project by
                         <a className={styles.vg} href="http://www.vg.no"></a>
                     </span>
                 </div>
