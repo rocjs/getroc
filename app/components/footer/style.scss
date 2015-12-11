@@ -22,7 +22,7 @@
 }
 
 .wrapper{
-  padding: 5px;
+    padding: 5px;
 }
 .github {
     background: url('./GitHub-Mark-Light-120px-plus.png') center no-repeat;
@@ -35,9 +35,12 @@
 
 .vg {
     background: url('./VG_logo.png') center no-repeat;
-    background-size: 66px 16px;
+    background-size: 55px 13px;
     height: 16px;
-    width: 80px;
+    width: 60px;
     display: inline-block;
     vertical-align: middle;
+}
+a{
+    color: #fff;
 }
