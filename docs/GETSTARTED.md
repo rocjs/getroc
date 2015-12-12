@@ -74,7 +74,7 @@ Roc does not enforce any set structure on you and can be configured.
 `app/components` - components of the application  
 `app/redux` - source related to data flow  
 `app/routes` - react router mapping  
-`app/screens` - components mapped to routes
+`app/screens` - components mapped to routes  
 `public` - files served directly from web server  
 `roc.config.js` - application configuration  
 `package.json` - `npm` package data
