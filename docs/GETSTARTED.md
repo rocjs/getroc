@@ -120,7 +120,7 @@ For now please look at the code, a more detailed example is coming.
 For now please look at the code, a more detailed example is coming.
 
 ## Related documentation references
-- [Browsersync](browsersync.io)
+- [Browsersync](https://browsersync.io)
 - [Redux](https://github.com/rackt/redux)
 - [React](https://facebook.github.io/react/)
 - [React Router](https://github.com/rackt/react-router)
