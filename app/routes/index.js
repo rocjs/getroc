@@ -8,6 +8,6 @@ import GetStarted from '../screens/get-started';
 export default () => (
     <Route component={ App }>
         <IndexRoute component={ Index } />
-        <Route path="/start" component={ GetStarted } />
+        <Route path="/start/" component={ GetStarted } />
     </Route>
 );
