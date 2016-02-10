@@ -1,6 +1,6 @@
 # Getting started with Roc
 
-This guide will walk you through how to set up your first project using React. This is just one example on how an application can be created. More guides and and documentation is on the way.
+This guide will walk you through how to set up your first project using Roc. This is just one example on how an application can be created. More guides and and documentation is on the way.
 
 ## Install
 Make sure you have [Node.js](https://nodejs.org) 4.x or higher and [npm](https://www.npmjs.com/) 3.x or higher on your system.
@@ -12,35 +12,11 @@ npm install -g roc
 ```
 `roc` will now be available globally on your system.
 
-## Create new Redux and React project
-Create directory for your app:
-```
-mkdir react-app && cd react-app
-```
+## Create new Roc project
 Bootstrap app starting point:
 ```
-roc init web-react
+roc init my-first-roc-project
 ```
-### Tip
-`web-react` is an alias to `vgno/roc-template-web-react`, a [repository location](https://github.com/vgno/roc-template-web-react) on Github. This template then uses the [roc-web-react](https://github.com/vgno/roc-web-react) extension. You can use your own repository by running `roc init GITHUB_USER/REPO`.
-
-You _can_ create your own extensions but that is outside the scope of this guide.
-
-## Development mode
-```
-roc dev
-```
-While this command is running the following is at your disposal:
-- See your app running at http://localhost:3002 with Browsersync support.
-- Manage your BrowserSync instance at http://localhost:3003. Connect as many different devices as you like.
-- Live reloading is active, and code can be live-edited and will be live-pushed to your browser.
-
-## View (dynamic) configuration options
-```
-roc dev --help
-```
-
-This prints all options that you can use to configure your current application. They are defined by the extensions that we use; currently `roc-web-react` in this guide. The runtime `cli` parameters are compatible with permanent values in `roc.config.js`.
 
 ## Default project structure
 The basic template defines this for you, but you may modify it to use an entirely different structure easily through `roc.config.js`.
@@ -95,6 +71,23 @@ module.exports = {
     }
 };
 ```
+
+
+## Development mode
+```
+roc dev
+```
+While this command is running the following is at your disposal:
+- See your app running at http://localhost:3002 with Browsersync support.
+- Manage your BrowserSync instance at http://localhost:3003. Connect as many different devices as you like.
+- Live reloading is active, and code can be live-edited and will be live-pushed to your browser.
+
+## View (dynamic) configuration options
+```
+roc dev --help
+```
+
+This prints all options that you can use to configure your current application. They are defined by the extensions that we use; currently `roc-web-react` in this guide. The runtime `cli` parameters are compatible with permanent values in `roc.config.js`.
 
 ## Change application configuration
 Permanent configurations belonging to your application should be defined in `roc.config.js`.
