@@ -8,7 +8,7 @@ Make sure you have [Node.js](https://nodejs.org) 4.x or higher and [npm](https:/
 __Currently only supported in Mac and Linux.__
 
 ```
-npm install -g roc
+npm install -g roc@1.0.0-beta3
 ```
 `roc` will now be available globally on your system.
 
@@ -43,13 +43,19 @@ roc dev --help
 This prints all options that you can use to configure your current application. They are defined by the extensions that we use; currently `roc-web-react` in this guide. The runtime `cli` parameters are compatible with permanent values in `roc.config.js`.
 
 ## Default project structure
-The basic template defines this for you, but you may modify it to use an entirely different structure easily through `roc.config.js`.
+The basic template defines this for you, but you may modify it to use an entirely different structure through `roc.config.js`.
 
-Roc does not enforce any set structure on you and can be configured.
+Roc does not enforce any set structure on you.
 ```
 ├── app
 │   ├── components
-│   │   └── clicker
+│   │   ├── clicker
+│   │   │   ├── index.js
+│   │   │   └── style.scss
+│   │   ├── footer
+│   │   │   ├── index.js
+│   │   │   ├── style.scss
+│   │   └── navbar
 │   │       ├── index.js
 │   │       └── style.scss
 │   ├── redux
@@ -58,6 +64,9 @@ Roc does not enforce any set structure on you and can be configured.
 │   ├── routes
 │   │   └── index.js
 │   └── screens
+│       ├── about
+│       │   ├── index.js
+│       │   └── style.scss
 │       ├── app
 │       │   ├── index.js
 │       │   └── style.scss
@@ -72,9 +81,9 @@ Roc does not enforce any set structure on you and can be configured.
 ```
 
 `app/components` - components of the application  
+`app/screens` - components mapped to routes
 `app/redux` - source related to data flow  
 `app/routes` - react router mapping  
-`app/screens` - components mapped to routes  
 `public` - files served directly from web server  
 `roc.config.js` - application configuration  
 `package.json` - `npm` package data
@@ -120,6 +129,8 @@ For now please look at the code, a more detailed example is coming.
 For now please look at the code, a more detailed example is coming.
 
 ## Related documentation references
+Roc installs and manages many libraries for you so that you can focus on your application. Below is a link outlining the most important ones.
+
 - [Browsersync](https://browsersync.io)
 - [Redux](https://github.com/rackt/redux)
 - [React](https://facebook.github.io/react/)

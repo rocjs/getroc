@@ -40,6 +40,11 @@
     margin-right: 15px;
 }
 
+.ossservice {
+    composes: image;
+    background-image: url('./assets/cellphone.svg');
+}
+
 .consistency {
     composes: image;
     background-image: url('./assets/cellphone106.svg');

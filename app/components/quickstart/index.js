@@ -9,6 +9,7 @@ export default class Quickstart extends React.Component {
             <div className={styles.quickstart}>
                 <div className="wrapper">
                     <h3>Get started</h3>
+
                     <div className={styles.columnWrapper}>
                         <div className={styles.column}>
                             <div
@@ -23,7 +24,7 @@ export default class Quickstart extends React.Component {
                             />
                         </div>
                     </div>
-                    <Link className={styles.moreButton} to="start">Learn more</Link>
+                    <Link className={styles.moreButton} to="start/">Learn more</Link>
                 </div>
             </div>
         );
