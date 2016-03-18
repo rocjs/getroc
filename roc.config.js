@@ -19,6 +19,7 @@ module.exports = {
         build: {
             assets: ['roc-web-react/styles/base.scss', 'app/styles/markdown.scss'],
             reducers: 'app/redux/reducers.js',
+            reduxMiddlewares: 'app/redux/middlewares.js',
             routes: 'app/routes/index.js'
         }
     }

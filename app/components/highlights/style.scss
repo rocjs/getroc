@@ -2,9 +2,25 @@
     background: rgb(220, 235, 238);
     color: #000;
 
-    h4{
+    h4 {
       font-family: 'Rajdhani';
       font-size: 24px;
       font-weight: 500;
     }
+}
+
+.warning {
+    img {
+        width: 40px;
+        float: left;
+        margin: 4px 8px 4px 4px;
+    }
+
+    background: #fffb90;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0 auto 10px auto;
+    width: 320px;
+    border: 1px solid #1d7c8e;
+    border-radius: 8px;
 }
