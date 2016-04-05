@@ -9,7 +9,7 @@ export default class Hero extends React.Component {
                 <div className="wrapper">
                     <img src={logo} className={styles.logo} alt="Roc logo" />
                     <h2>Modern web development system</h2>
-                    <code className={styles.install}>npm install -g roc@1.0.0-beta3</code>
+                    <code className={styles.install}>npm install -g roc</code>
                 </div>
             </div>
         );

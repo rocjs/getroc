@@ -9,11 +9,6 @@ export default class Highlights extends React.Component {
         return (
             <div className={styles.main}>
                 <div className="wrapper">
-                    <div className={styles.warning}>
-                        <img src={sign} alt="Warning" />
-                        Roc is currently in a transition period in which we are making it much better. Please use <i>beta3</i> in the meantime
-                    </div>
-
                     <h3>Highlights</h3>
                     <Highlight image="ossservice">
                         <h4>OSS as a service</h4>
