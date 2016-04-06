@@ -8,7 +8,7 @@ Make sure you have [Node.js](https://nodejs.org) 4.x or higher and [npm](https:/
 __Currently only supported in Mac and Linux.__
 
 ```
-npm install -g roc@1.0.0-beta3
+npm install -g roc
 ```
 `roc` will now be available globally on your system.
 
@@ -80,12 +80,12 @@ Roc does not enforce any set structure on you.
 
 ```
 
-`app/components` - components of the application  
+`app/components` - components of the application
 `app/screens` - components mapped to routes
-`app/redux` - source related to data flow  
-`app/routes` - react router mapping  
-`public` - files served directly from web server  
-`roc.config.js` - application configuration  
+`app/redux` - source related to data flow
+`app/routes` - react router mapping
+`public` - files served directly from web server
+`roc.config.js` - application configuration
 `package.json` - `npm` package data
 
 ## Default project configuration
