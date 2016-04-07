@@ -22,7 +22,7 @@ Bootstrap app starting point:
 roc init web-app-react
 ```
 ### Tip
-`web-react` is an alias to `rocjs/roc-template-web-app-react`, a [repository location](https://github.com/rocjs/roc-template-web-app-react) on Github. This template then uses the [roc-web-app-react](https://github.com/vgno/roc-web-app-react) extension. You can use your own repository by running `roc init GITHUB_USER/REPO`.
+`web-app-react` is an alias to `rocjs/roc-template-web-app-react`, a [repository location](https://github.com/rocjs/roc-template-web-app-react) on Github. This template then uses the [roc-web-app-react](https://github.com/rocjs/roc-web-app-react) extension. You can use your own repository by running `roc init GITHUB_USER/REPO`.
 
 You _can_ create your own extensions but that is outside the scope of this guide.
 
