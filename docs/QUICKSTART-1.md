@@ -12,7 +12,7 @@ mkdir react-app
 cd react-app
 ```
 ```
-roc init web-react
+roc init web-app-react
 ```
 
 #### Start development mode
