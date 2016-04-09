@@ -22,7 +22,7 @@ Bootstrap app starting point:
 roc init web-app-react
 ```
 ### Tip
-`web-app-react` is an alias to `rocjs/roc-template-web-app-react`, a [repository location](https://github.com/rocjs/roc-template-web-app-react) on Github. This template then uses the [roc-web-app-react](https://github.com/rocjs/roc-web-app-react) extension. You can use your own repository by running `roc init GITHUB_USER/REPO`.
+`web-app-react` is an alias to `rocjs/roc-template-web-app-react`, a [repository location](https://github.com/rocjs/roc-template-web-app-react) on Github. This template then uses the [roc-package-web-app-react](https://github.com/rocjs/roc-package-web-app-react) extension. You can use your own repository by running `roc init GITHUB_USER/REPO`.
 
 You _can_ create your own extensions but that is outside the scope of this guide.
 
@@ -40,7 +40,7 @@ While this command is running the following is at your disposal:
 roc dev --help
 ```
 
-This prints all options that you can use to configure your current application. They are defined by the extensions that we use; currently `roc-web-app-react` in this guide. The runtime `cli` parameters are compatible with permanent values in `roc.config.js`.
+This prints all options that you can use to configure your current application. They are defined by the extensions that we use; currently `roc-package-web-app-react` in this guide. The runtime `cli` parameters are compatible with permanent values in `roc.config.js`.
 
 ## Default project structure
 The basic template defines this for you, but you may modify it to use an entirely different structure through `roc.config.js`.
