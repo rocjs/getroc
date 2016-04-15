@@ -1,7 +1,6 @@
 import React from 'react';
 
 import styles from './style.scss';
-import sign from './sign.svg';
 import Highlight from './highlight';
 
 export default class Highlights extends React.Component {

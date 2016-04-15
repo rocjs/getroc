@@ -1,24 +1,26 @@
 {
-  "name": "getroc.org",
-  "version": "1.0.0",
-  "description": "Get started with Roc",
-  "author": "VG",
-  "license": "MIT",
-  "scripts": {
-    "test": "npm run lint",
-    "lint": "eslint .",
-    "build": "roc build --build-disableProgressbar true",
-    "start": "roc start"
-  },
-  "dependencies": {
-    "html-loader": "~0.4.0",
-    "markdown-loader": "~0.1.7",
-    "roc-web-react": "1.0.0-beta7"
-  },
-  "devDependencies": {
-    "babel-eslint": "~4.1.6",
-    "eslint": "~1.10.3",
-    "eslint-config-vgno": "~5.0.0",
-    "eslint-plugin-react": "~3.11.3"
-  }
+    "name": "getroc.org",
+    "version": "1.0.0",
+    "description": "Get started with Roc",
+    "author": "VG",
+    "license": "MIT",
+    "scripts": {
+        "test": "npm run lint",
+        "lint": "eslint .",
+        "build": "roc build --build-disableProgressbar true",
+        "start": "roc start"
+    },
+    "dependencies": {
+        "html-loader": "~0.4.0",
+        "markdown-loader": "~0.1.7",
+        "roc-package-web-app-react": "1.0.0-alpha.4"
+    },
+    "devDependencies": {
+        "babel-eslint": "6.0.2",
+        "eslint": "2.6.0",
+        "eslint-config-airbnb": "6.2.0",
+        "eslint-plugin-react": "4.2.3",
+        "roc-package-web-app-react-dev": "1.0.0-alpha.4",
+        "roc-plugin-style-sass": "^1.0.0-alpha.1"
+    }
 }
