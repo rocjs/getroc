@@ -31,8 +31,8 @@ You _can_ create your own extensions but that is outside the scope of this guide
 roc dev
 ```
 While this command is running the following is at your disposal:
-- See your app running at http://localhost:3002 with Browsersync support.
-- Manage your BrowserSync instance at http://localhost:3003. Connect as many different devices as you like.
+- See your app running at http://localhost:3030 with Browsersync support.
+- Manage your BrowserSync instance at http://localhost:3031. Connect as many different devices as you like.
 - Live reloading is active, and code can be live-edited and will be live-pushed to your browser.
 
 ## View (dynamic) configuration options
