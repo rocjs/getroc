@@ -6,7 +6,7 @@ export default class GetStarted extends React.Component {
             <div className="wrapper">
                 <div
                     className="markdown-body"
-                    dangerouslySetInnerHTML={{__html: require('../../../docs/GETSTARTED.md')}}
+                    dangerouslySetInnerHTML={ { __html: require('../../../docs/GETSTARTED.md') } }
                 />
             </div>
         );

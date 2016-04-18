@@ -14,17 +14,19 @@ export default class Quickstart extends React.Component {
                         <div className={styles.column}>
                             <div
                                 className="markdown-body"
-                                dangerouslySetInnerHTML={{__html: require('../../../docs/QUICKSTART-1.md')}}
+                                dangerouslySetInnerHTML={ { __html: require('../../../docs/QUICKSTART-1.md') } }
                             />
                         </div>
+
                         <div className={styles.column}>
                             <div
                                 className="markdown-body"
-                                dangerouslySetInnerHTML={{__html: require('../../../docs/QUICKSTART-2.md')}}
+                                dangerouslySetInnerHTML={ { __html: require('../../../docs/QUICKSTART-2.md') } }
                             />
                         </div>
                     </div>
-                    <Link className={styles.moreButton} to="start/">Learn more</Link>
+
+                    <Link className={ styles.moreButton } to="start/">Learn more</Link>
                 </div>
             </div>
         );
