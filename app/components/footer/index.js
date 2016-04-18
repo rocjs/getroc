@@ -14,7 +14,7 @@ export default class Footer extends React.Component {
                         <a className={styles.vg} href="http://tech.vg.no"></a>
                     </span>
                     <span className={styles.iconCredits}>
-                        Icons by <a href="http://www.flaticon.com/authors/freepik">Freepik</a>
+                        Icons by <a href="http://www.flaticon.com/authors/freepik">Freepik</a>&nbsp;
                         from <a href="http://flaticon.com">Flaticon</a>
                     </span>
                 </div>

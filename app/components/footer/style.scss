@@ -5,12 +5,12 @@
 
 .align {
     display: inline-block;
-    width: 50%;
 }
 
 .left {
     composes: align;
     text-align: left;
+    width: 20%;
 }
 
 .right {
@@ -19,6 +19,7 @@
     color: #fff;
     vertical-align: middle;
     font-size: 12px;
+    width: 80%;
 }
 
 .wrapper{
