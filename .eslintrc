@@ -1,13 +1,13 @@
 {
-    "extends": "vgno/react",
-
+    "extends": "airbnb",
     "parser": "babel-eslint",
-
-    "env": {
-        "es6": true
-    },
-
-    "ecmaFeatures": {
-        "modules": true
+    "rules": {
+        "react/prefer-stateless-function": 0,
+        "react/jsx-indent-props": [2, 4],
+        "indent": [2, 4, { "SwitchCase": 1, "VariableDeclarator": 1 }],
+        "comma-dangle": [2, "never"],
+        "max-len": [2, 120, 4],
+        "no-use-before-define": [2, { "functions": false }],
+        "consistent-return": 0
     }
 }
