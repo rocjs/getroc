@@ -1,13 +1,4 @@
 module.exports = {
-    plugins: {
-        createBuilder: (target, rocBuilder) => {
-            rocBuilder.buildConfig.module.loaders.push(
-                { test: /\.md$/, loader: 'html!markdown' }
-            );
-
-            return rocBuilder;
-        }
-    },
     settings: {
         runtime: {
             applicationName: 'Roc - Get started developing today!',
@@ -20,10 +11,13 @@ module.exports = {
             }
         },
         build: {
-            assets: ['roc-web-react/styles/base.scss', 'app/styles/markdown.scss'],
+            resources: ['roc-package-web-app-react/styles/base.css', 'app/styles/markdown.scss'],
             reducers: 'app/redux/reducers.js',
             reduxMiddlewares: 'app/redux/middlewares.js',
             routes: 'app/routes/index.js'
         }
-    }
+    },
+    // an action lets us hook right into any important Roc context
+    // in this app we just want to add markdown loader to webpack
+    action: require('./roc.config.action')
 };
