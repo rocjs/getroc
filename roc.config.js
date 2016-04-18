@@ -14,7 +14,10 @@ module.exports = {
             port: 3000,
             serve: ['public', 'build/client'],
             favicon: 'favicon.png',
-            link: []
+            link: [],
+            template: {
+                path: 'templates'
+            }
         },
         build: {
             assets: ['roc-web-react/styles/base.scss', 'app/styles/markdown.scss'],
