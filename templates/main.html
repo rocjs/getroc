@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        {{ head.title | safe }}
+        {{ head.meta | safe }}
+        {{ head.link | safe }}
+        {{ head.base | safe }}
+        {{ head.script | safe }}
+
+        {% if dist %}
+        <link rel="stylesheet" href="{{ styleName }}">
+        {% endif %}
+    </head>
+    <body>
+        <div id="application">{{ content | safe }}</div>
+
+        <script>window.ROC_CONFIG = {{ serializedRocConfig | safe }}</script>
+        <script>window.APP_CONFIG = {{ serializedAppConfig | safe }}</script>
+        <script>window.FLUX_STATE = {{ fluxState | safe }}</script>
+
+        <script src="{{ bundleName }}"></script>
+
+        {# TODO: add this in a better way #}
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-76565306-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
