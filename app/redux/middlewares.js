@@ -1,7 +1,7 @@
 /* global __WEB__*/
 
 const scrollTopMiddleware = () => (next) => (action) => {
-    if (action.type === '@@router/UPDATE_PATH') {
+    if (action.type === '@@router/LOCATION_CHANGE') {
         window.scrollTo(0, 0);
     }
 
