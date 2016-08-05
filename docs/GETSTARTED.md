@@ -1,6 +1,6 @@
 # Getting started with Roc
 
-This guide will walk you through how to set up your first project using React. This is just one example on how an application can be created. More guides and and documentation is on the way.
+This guide will walk you through how to set up your first React project using Roc. Roc can be used to build other type of projects, but React is the most advanced and common scenario.
 
 ## Install
 Make sure you have [Node.js](https://nodejs.org) 4.x or higher and [npm](https://www.npmjs.com/) 3.x or higher on your system.
@@ -21,7 +21,8 @@ Bootstrap app starting point:
 ```
 roc init web-app-react
 ```
-### Tip
+
+### Note
 `web-app-react` is an alias to `rocjs/roc-template-web-app-react`, a [repository location](https://github.com/rocjs/roc-template-web-app-react) on Github. This template then uses the [roc-package-web-app-react](https://github.com/rocjs/roc-package-web-app-react) extension. You can use your own repository by running `roc init GITHUB_USER/REPO`.
 
 You _can_ create your own extensions but that is outside the scope of this guide.

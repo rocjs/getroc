@@ -3,6 +3,7 @@ import React from 'react';
 import Hero from '../../components/hero';
 import Highlights from '../../components/highlights';
 import Quickstart from '../../components/quickstart';
+import Questions from '../../components/questions';
 
 export default class Index extends React.Component {
     render() {
@@ -11,6 +12,7 @@ export default class Index extends React.Component {
                 <Hero />
                 <Highlights />
                 <Quickstart />
+                <Questions />
             </div>
         );
     }

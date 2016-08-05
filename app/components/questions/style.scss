@@ -1,0 +1,35 @@
+.quickstart {
+    background: #fff;
+    text-align: center;
+}
+
+.row {
+    display: block;
+    vertical-align: top;
+    text-align: left;
+    font-weight: 300;
+    line-height: 24px;
+
+    h3 {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    h4 {
+      font-family: 'Rajdhani';
+      font-size: 24px !important;
+      font-weight: 500 !important;
+
+    }
+    h5 {
+      font-family: 'Rajdhani';
+      font-size: 18px;
+      font-weight: 500;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .column  {
+        width: 100%;
+    }
+}

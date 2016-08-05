@@ -25,7 +25,7 @@ export default class Quickstart extends React.Component {
                             />
                         </div>
                     </div>
-
+                    <img src="rocnew.gif" alt="roc install demo" />
                     <Link className={ styles.moreButton } to="start/">Learn more</Link>
                 </div>
             </div>

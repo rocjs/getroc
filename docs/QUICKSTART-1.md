@@ -6,13 +6,12 @@ npm install -g roc
 
 #### Create redux and react project
 ```
-mkdir react-app
+roc new my-app-react
 ```
+
+#### Enter your new project
 ```
-cd react-app
-```
-```
-roc init web-app-react
+cd my-app-react
 ```
 
 #### Start development mode

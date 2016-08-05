@@ -10,13 +10,13 @@ export default class Highlights extends React.Component {
                 <div className="wrapper">
                     <h3>Highlights</h3>
                     <Highlight image="ossservice">
-                        <h4>OSS as a service</h4>
+                        <h4>Instant productivity</h4>
                         Use established open source libraries from npm instantly without all the glue-code.
                     </Highlight>
 
                     <Highlight image="consistency">
                         <h4>Consistency</h4>
-                        Handle all your apps and components in a consistent way between teams.
+                        Handle all your apps and components in a consistent way between projects and teams.
                     </Highlight>
 
                     <Highlight image="composition">
@@ -27,7 +27,7 @@ export default class Highlights extends React.Component {
 
                     <Highlight image="automation">
                         <h4>Automation</h4>
-                        Easy to use tooling provides commands like <em>build</em>, <em>develop</em> and <em>test</em>.
+                        Easy to use tooling provides commands like <em>build</em>, <em>develop</em> and <em>test</em>. Worry less about Webpack configurations.
                     </Highlight>
 
                     <Highlight image="developerux">
@@ -42,7 +42,7 @@ export default class Highlights extends React.Component {
 
                     <Highlight image="reduceboiler">
                         <h4>Reduce boilerplate</h4>
-                        The versioned extensions embed boilerplate so that it does not pollute your application.
+                        The versioned extensions embed best-practice boilerplate so that it does not pollute your applications.
                     </Highlight>
 
                     <Highlight image="reactredux">
