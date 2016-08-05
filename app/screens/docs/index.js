@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class GetStarted extends React.Component {
+export default class Docs extends React.Component {
     render() {
         return (
             <div className="wrapper">
