@@ -1,6 +1,6 @@
 # Getting started with Roc
 
-This guide will walk you through how to set up your first React project using Roc. Roc can be used to build other type of projects, but React is the most advanced and common scenario.
+This guide will walk you through how to set up your first React project using Roc. Roc can also be used to build other type of projects.
 
 ## Install
 Make sure you have [Node.js](https://nodejs.org) 4.x or higher and [npm](https://www.npmjs.com/) 3.x or higher on your system.

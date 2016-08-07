@@ -8,7 +8,7 @@ No. Think of Roc as a complete toolchain that enables you to create a type of np
 
 #### Where can I read more about how Roc works
 
-We have compiled an overview here on this website. Please do check it out.
+We have compiled an overview <a href="/docs/">here</a> on this website. Please do check it out.
 
 #### Will this be abandoned in the near future?
 

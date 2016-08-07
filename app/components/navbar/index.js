@@ -15,6 +15,9 @@ export default class Menu extends React.Component {
                             <Link to="/start/" className={styles.a} activeClassName={styles.active}>Get started</Link>
                         </li>
                         <li>
+                            <Link to="/why/" className={styles.a} activeClassName={styles.active}>Why</Link>
+                        </li>
+                        <li>
                             <Link to="/docs/" className={styles.a} activeClassName={styles.active}>Docs</Link>
                         </li>
                     </ul>
