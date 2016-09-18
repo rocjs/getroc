@@ -1,0 +1,42 @@
+.readmore {
+    overflow: auto;
+    //background: #3da1ab;
+    background: #5F7A91;
+    background-size: cover;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.docs {
+    width: 80px;
+    display: block;
+    margin: 50px auto 0 auto;
+}
+
+.moreButton {
+    display: inline-block;
+    padding: 5px 40px;
+    margin: 30px 0px;
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 2px solid #fff;
+    background: inherit;
+    border-radius: 2px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+.moreButton:hover {
+    color: #fff;
+    //background: rgb(29, 124, 142)
+    background: #254763;
+}

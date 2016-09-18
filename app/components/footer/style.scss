@@ -1,56 +1,22 @@
 .footer {
-    background-color: rgb(29, 124, 142);
-    width: 100%;
-}
-
-.align {
-    display: inline-block;
-}
-
-.left {
-    composes: align;
-    text-align: left;
-    width: 20%;
-}
-
-.right {
-    composes: align;
-    text-align: right;
+    font-size: 20px;
+    background-color: #333;
     color: #fff;
-    vertical-align: middle;
-    font-size: 12px;
-    width: 80%;
-}
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 
-.wrapper{
-    padding: 5px;
-}
-.github {
-    background: url('./GitHub-Mark-Light-120px-plus.png') center no-repeat;
-    background-size: 32px 32px;
-    height: 32px;
-    width: 32px;
-    display: inline-block;
-    vertical-align: middle;
+    a {
+        display: block;
+        margin: 20px auto 0 auto;
+    }
 }
 
 .vg {
-    background: url('./VG_logo.png') center no-repeat;
-    background-size: 55px 13px;
-    height: 16px;
-    width: 60px;
+    background: url('./assets/vglogo.png') center no-repeat;
+    background-size: 104px 24px;
+    height: 24px;
+    width: 104px;
     display: inline-block;
     vertical-align: middle;
-}
-
-.iconCredits {
-    font-size: 12px;
-    text-align: center;
-    display: block;
-    color: #E9E9E9;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    a {
-        color: #E9E9E9;
-    }
 }
