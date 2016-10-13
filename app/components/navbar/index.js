@@ -20,7 +20,7 @@ export default class Menu extends React.Component {
                             <Link to="/why/" className={styles.a} activeClassName={styles.active}>Why</Link>
                         </li>
                         <li className={ styles.item }>
-                            <a href="https://github.com/rocjs/roc/blob/next/docs/README.md" className={styles.a}>Docs</a>
+                            <a href="https://github.com/rocjs/roc/blob/master/docs/README.md" className={styles.a}>Docs</a>
                         </li>
                         <li className={`${styles.item} ${styles.extra}`}>
                             <a href="https://github.com/search?q=org%3Arocjs+roc-plugin+OR+roc-package" className={styles.a}>Extensions</a>
