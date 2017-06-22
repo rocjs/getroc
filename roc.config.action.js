@@ -1,18 +1,13 @@
 // we can make a plugin for this
-module.exports = () => (roc) => {
-    const hook = roc.hook;
-
+module.exports = ({ hook }) => {
     if (hook === 'build-webpack') {
-        // the return value from the previous action on this hook
-        const rocBuilder = roc.previousValue;
-
-        return () => () => {
+        return () => (webpack) => {
             // add markdown loader
-            rocBuilder.buildConfig.module.loaders.push(
+            webpack.module.loaders.push(
                 { test: /\.md$/, loader: 'html!markdown' }
             );
 
-            return rocBuilder;
+            return webpack;
         };
     }
 };
