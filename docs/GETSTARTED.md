@@ -1,8 +1,8 @@
 # Getting started with Roc
 
-This guide will walk you through the setup of your first React project using Roc. We will be focused on React + Redux in this starter-guide. Roc _can_ also be used to build other type of projects.
+We will be focused on React and Redux oriented applications in this starter-guide. A very popular choice combined with server-rendering for delivering blazing fast user experiences. Roc has taken care of all the tooling to get you started writing your app instantly.
 
-## Install
+## Install Roc
 Make sure you have [Node.js](https://nodejs.org) 4.x or higher and [npm](https://www.npmjs.com/) 3.x or higher on your system.
 
 __Currently with official support for Mac, Linux and Windows.__
@@ -22,19 +22,11 @@ Bootstrap app starting point:
 roc init web-app-react wip
 ```
 
-### What just happened?
-`roc init` initializes new projects for you.  
-`web-app-react` is an alias to `rocjs/roc-template-web-app-react`, a [repository location](https://github.com/rocjs/roc-template-web-app-react) on Github.  
+We recommend you answer `Yes` to data-fetching and Redux when prompted, unless you have a clear strategy on how to implement this on your own. You can delete them later if you wish.
 
-We also specify `wip`, which is a branch that contains the latest features. The initialized app then uses the [roc-package-web-app-react](https://github.com/rocjs/roc-package-web-app-react) extension. You can think of this as an optimized set of tools and libraries that aims to keep your project code simple and clean.
 
-### Advanced tips:
-You _can_ use your own template repository by running `roc init GITHUB_USER/REPO`.  
-You _can_ also create your own extensions from scratch.
 
-You are not limited to the pre-made extensions that already exist. Advanced users are free to create their own.
-
-## Get hacking on your project: development mode
+## Launch project and start coding: development mode
 ```
 roc dev
 ```
@@ -43,49 +35,52 @@ While this command is running the following is at your disposal:
 - Manage your BrowserSync instance at http://localhost:3031. Connect as many different devices as you like.
 - Live reloading is active, and code can be live-edited and will be live-pushed to your browser.
 
+Your React app is fully universal, and if you opted in for data-fetching or Redux you will also have working demos of the most common use-cases in frontend oriented apps accessible in the menu: 
+
+![image of roc in action](./screenshot.png)
+
 ## View (dynamic) configuration options
 ```
 roc dev --help
 ```
 
-This prints all options that you can use to configure your current application. They are defined by the extensions that we use; currently `roc-package-web-app-react` in this guide. The runtime `cli` parameters are compatible with permanent values in `roc.config.js`.
+This prints all options that you can use to configure your current Roc application. They are defined by the extensions that we use; currently `roc-package-web-app-react` in this guide. The runtime `cli` parameters are compatible with `roc.config.js`. We recommend the use of `roc.config.js` for configuration that should be persisted in your project.
 
 ## Default project structure
-The basic template defines this for you, but you may modify it to use an entirely different structure through `roc.config.js`.
+The basic template defined this for you upon `init`. Below is a summary of the __entire__ tree with all the optionals included.
 
-Roc does not enforce any set structure on you.
 ```
-├── app
+├── public
+│   └── favicon.png
+├── src
 │   ├── components
 │   │   ├── clicker
 │   │   │   ├── index.js
 │   │   │   └── style.scss
-│   │   ├── footer
+│   │   ├── fetching
 │   │   │   ├── index.js
-│   │   │   ├── style.scss
-│   │   └── navbar
-│   │       ├── index.js
-│   │       └── style.scss
+│   │   │   └── style.scss
+│   │   ├── header
+│   │   │   ├── index.js
+│   │   │   ├── roc.png
+│   │   │   └── style.scss
+│   │   ├── redux
+│   │   │   ├── index.js
+│   │   │   └── style.scss
+│   │   ├── start
+│   │   │   ├── ext.png
+│   │   │   ├── index.js
+│   │   │   └── style.scss
+│   │   ├── index.js
+│   │   ├── reset.scss
+│   │   └── style.scss
 │   ├── redux
 │   │   ├── clicker.js
-│   │   └── reducers.js
-│   ├── routes
-│   │   └── index.js
-│   └── screens
-│       ├── about
-│       │   ├── index.js
-│       │   └── style.scss
-│       ├── app
-│       │   ├── index.js
-│       │   └── style.scss
-│       └── start
-│           ├── index.js
-│           └── style.scss
+│   │   ├── reducers.js
+│   │   └── repo.js
+│   └── routes.js
 ├── package.json
-├── public
-│   └── favicon.png
 └── roc.config.js
-
 ```
 
 `app/components` - components of the application  
@@ -96,20 +91,22 @@ Roc does not enforce any set structure on you.
 `roc.config.js` - application configuration  
 `package.json` - `npm` package data
 
+You may wish your project to use an entirely different structure, and this can be done  using `roc.config.js` and specifying alternative paths for `reducers`, `routes`, etc.
+
 ## Default project configuration
 This configuration is the default one generated by [`roc-template-web-app-react`](https://github.com/rocjs/roc-template-web-app-react).
 ```
 module.exports = {
   settings: {
     runtime: {
-      applicationName: '{{ rocTitleName }}',
-      port: {{ rocPort }},
+      applicationName: '{{ title }}',
+      port: {{ port }},
       serve: ['public', 'build/client'],
       favicon: 'favicon.png',
     },
     build: {
-      reducers: 'app/redux/reducers.js',
-      routes: 'app/routes/index.js',
+      reducers: 'src/redux/reducers.js',
+      routes: 'src/routes.js',
     },
   },
 };
@@ -125,21 +122,58 @@ Temporary configuration changes can be done using the `cli` as seen from `roc de
 roc build
 ```
 
+Be sure to run this to make a production-ready bundle of your application. Typically done as a part of building your Docker image.
+
 ## Start production bundles
 ```
 roc start
 ```
 
-# Additional documentation
+Your app is now ready to serve real traffic.
 
-## How to: add a component
+# FAQ
+## What does roc init do?
+`roc init` initializes new projects for you.  
+
+`web-app-react` (the first argument used in this guide) is an alias to `rocjs/roc-template-web-app-react`, a [repository location](https://github.com/rocjs/roc-template-web-app-react) on Github. This defines the initial project setup.  
+
+We also specify `wip`, which is a branch that contains the latest features. The initialized app is then set up to use the [roc-package-web-app-react](https://github.com/rocjs/roc-package-web-app-react) extension automatically. You can think of this as an optimized set of tools and libraries that aims to keep your project code simple and clean.
+
+### What if I am not happy with the result of init?
+You _can_ use your own template repository by running `roc init GITHUB_USER/REPO`.  
+You _can_ also create your own extensions from scratch.
+
+Think of Roc as a complete and fully open source JavaScript framework provider and library composer.
+
+## How do I add a component?
 For now please look at the code, a more detailed example is coming.
 
-## How to: add a route
+## How do I add a new route to my app?
 For now please look at the code, a more detailed example is coming.
 
-## Related documentation references
-Roc with roc-package-web-app-react installs and manages many libraries for you so that you can focus on your application. Below is a link outlining the most important ones.
+## Do I have to use sass and CSS modules?
+We really like this and provide it  by default. However you are free to make other choices; we currently supply plugins for `less` and  `css+postss` as well.
+
+## Why does Roc ecosystem currently use Webpack 1.x and Koa 1.x?
+Stability and productivity is the most important. However a dependency-update __is__ coming, and the good part is that it will require little effort from you to upgrade as a Roc user when it is available! Also we want to be community-driven, so please reach out to us if you want to help.
+
+## Can I run Roc web-app-react apps in Docker?
+Yes, this works great. Here is an example `Dockerfile`
+
+```dockerfile
+FROM node:7.10.0
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY package.json /usr/src/app/package.json
+RUN npm install
+COPY . /usr/src/app
+RUN npm run build
+CMD ["npm", "start"]
+EXPOSE 3000
+```
+
+## I am a bit stuck, where can I find more information?
+Roc with `roc-package-web-app-react` installs and manages many libraries for you so that you can focus on your application. Below is a link outlining the most important libraries you should be familiar with when using `roc-package-web-app-react`.
 
 - [Browsersync](https://browsersync.io)
 - [Redux](https://github.com/rackt/redux)
