@@ -12,6 +12,7 @@
 }
 
 .logo {
+    border-radius: 2px;
     display: inline-block;
     margin: 20px auto 0 auto;
     background: #fff;
@@ -20,9 +21,9 @@
 
 .sch {
     background: url('./assets/sch.png') center no-repeat;
-    background-size: 250px 56px;
-    height: 56px;
-    width: 250px;
+    background-size: 200px 45px;
+    height: 45px;
+    width: 200px;
     //display: inline-block;
     vertical-align: middle;
 }
