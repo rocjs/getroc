@@ -1,6 +1,6 @@
 #### Is Roc production ready?
 
-Yes. VG is currently running products in production built with Roc. The first stable release of Roc was published to npm recently.
+Yes. Schibsted is currently running products in production built with Roc.
 
 #### Is Roc a boilerplate generator?
 
@@ -12,4 +12,4 @@ We have compiled an overview <a href="/docs/">here</a> on this website. Please d
 
 #### Will this be abandoned in the near future?
 
-No. VG developed Roc because it was badly needed. It is a big investment for us. We will only consider abandoning the project if better initiatives emerge with more traction.
+No. Schibsted developed Roc because it was badly needed. It is a big investment for us. We will only consider abandoning the project if better initiatives emerge with more traction.

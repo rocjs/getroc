@@ -1,11 +1,11 @@
 # Getting started with Roc
 
-This guide will walk you through how to set up your first React project using Roc. Roc can also be used to build other type of projects.
+This guide will walk you through the setup of your first React project using Roc. We will be focused on React + Redux in this starter-guide. Roc _can_ also be used to build other type of projects.
 
 ## Install
 Make sure you have [Node.js](https://nodejs.org) 4.x or higher and [npm](https://www.npmjs.com/) 3.x or higher on your system.
 
-__Currently only supported in Mac and Linux.__
+__Currently with official support for Mac, Linux and Windows.__
 
 ```
 npm install -g roc@next
@@ -19,15 +19,22 @@ mkdir react-app && cd react-app
 ```
 Bootstrap app starting point:
 ```
-roc init web-app-react
+roc init web-app-react wip
 ```
 
-### Note
-`web-app-react` is an alias to `rocjs/roc-template-web-app-react`, a [repository location](https://github.com/rocjs/roc-template-web-app-react) on Github. This template then uses the [roc-package-web-app-react](https://github.com/rocjs/roc-package-web-app-react) extension. You can use your own repository by running `roc init GITHUB_USER/REPO`.
+### What just happened?
+`roc init` initializes new projects for you.  
+`web-app-react` is an alias to `rocjs/roc-template-web-app-react`, a [repository location](https://github.com/rocjs/roc-template-web-app-react) on Github.  
 
-You _can_ create your own extensions but that is outside the scope of this guide.
+We also specify `wip`, which is a branch that contains the latest features. The initialized app then uses the [roc-package-web-app-react](https://github.com/rocjs/roc-package-web-app-react) extension. You can think of this as an optimized set of tools and libraries that aims to keep your project code simple and clean.
 
-## Development mode
+### Advanced tips:
+You _can_ use your own template repository by running `roc init GITHUB_USER/REPO`.  
+You _can_ also create your own extensions from scratch.
+
+You are not limited to the pre-made extensions that already exist. Advanced users are free to create their own.
+
+## Get hacking on your project: development mode
 ```
 roc dev
 ```
@@ -81,12 +88,12 @@ Roc does not enforce any set structure on you.
 
 ```
 
-`app/components` - components of the application
-`app/screens` - components mapped to routes
-`app/redux` - source related to data flow
-`app/routes` - react router mapping
-`public` - files served directly from web server
-`roc.config.js` - application configuration
+`app/components` - components of the application  
+`app/screens` - components mapped to routes  
+`app/redux` - source related to data flow  
+`app/routes` - react router mapping  
+`public` - files served directly from web server  
+`roc.config.js` - application configuration  
 `package.json` - `npm` package data
 
 ## Default project configuration
@@ -132,14 +139,11 @@ For now please look at the code, a more detailed example is coming.
 For now please look at the code, a more detailed example is coming.
 
 ## Related documentation references
-Roc installs and manages many libraries for you so that you can focus on your application. Below is a link outlining the most important ones.
+Roc with roc-package-web-app-react installs and manages many libraries for you so that you can focus on your application. Below is a link outlining the most important ones.
 
 - [Browsersync](https://browsersync.io)
 - [Redux](https://github.com/rackt/redux)
 - [React](https://facebook.github.io/react/)
 - [React Router](https://github.com/rackt/react-router)
 - [React Helmet](https://github.com/nfl/react-helmet)
-- [React Fetcher](https://github.com/markdalgleish/react-fetcher)
 - [CSS Modules](https://github.com/css-modules/css-modules)
-- [Redux Fetcher](https://github.com/vgno/redux-fetcher)
-- [Redux API Middleware](https://github.com/vgno/redux-api-middleware)
