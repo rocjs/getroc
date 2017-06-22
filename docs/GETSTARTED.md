@@ -8,7 +8,7 @@ Make sure you have [Node.js](https://nodejs.org) 4.x or higher and [npm](https:/
 __Currently only supported in Mac and Linux.__
 
 ```
-npm install -g roc
+npm install -g roc@next
 ```
 `roc` will now be available globally on your system.
 

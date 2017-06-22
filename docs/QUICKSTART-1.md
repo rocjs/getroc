@@ -1,7 +1,7 @@
 #### Install
 Make sure you have node 4.x+ and npm 3.x+ on your system.
 ```
-npm install -g roc
+npm install -g roc@next
 ```
 
 #### Create redux and react project
