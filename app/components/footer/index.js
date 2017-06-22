@@ -5,8 +5,12 @@ export default class Footer extends React.Component {
     render() {
         return (
             <div className={styles.footer}>
-                An open source project by
-                <a className={styles.vg} href="http://tech.vg.no"></a>
+                <div>
+                    An open source project by
+                </div>
+                <div className={styles.logo}>
+                    <a className={styles.sch} href="http://bytes.schibsted.com/" rel="Schibsted Products and Tech blog"></a>
+                </div>
             </div>
         );
     }

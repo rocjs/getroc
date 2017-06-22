@@ -8,15 +8,21 @@
 
     a {
         display: block;
-        margin: 20px auto 0 auto;
     }
 }
 
-.vg {
-    background: url('./assets/vglogo.png') center no-repeat;
-    background-size: 104px 24px;
-    height: 24px;
-    width: 104px;
+.logo {
     display: inline-block;
+    margin: 20px auto 0 auto;
+    background: #fff;
+    padding: 6px;
+}
+
+.sch {
+    background: url('./assets/sch.png') center no-repeat;
+    background-size: 250px 56px;
+    height: 56px;
+    width: 250px;
+    //display: inline-block;
     vertical-align: middle;
 }
