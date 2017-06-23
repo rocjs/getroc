@@ -1,6 +1,8 @@
 # Getting started with Roc
 
-We will be focused on React and Redux oriented applications in this starter-guide. A very popular choice combined with server-rendering for delivering blazing fast user experiences. Roc has taken care of all the tooling to get you started writing your app instantly.
+We will be focused on React and Redux based applications in this starter-guide. A very popular choice combined with server-rendering for delivering blazing fast user experiences. Roc has taken care of all the tooling so that you can get started writing your app instantly.  
+
+Keep in mind that Roc is **not** tied to React and Redux extensions. Creating your own extension is also an option.
 
 ## Install Roc
 Make sure you have [Node.js](https://nodejs.org) 4.x or higher and [npm](https://www.npmjs.com/) 3.x or higher on your system.
@@ -21,10 +23,12 @@ Bootstrap app starting point:
 ```
 roc init web-app-react wip
 ```
+We recommend you answer `Yes` to data-fetching, Redux and Jest testing when prompted, unless you have a clear strategy on how to implement this on your own. You can delete them later in your project if you wish.
 
-We recommend you answer `Yes` to data-fetching and Redux when prompted, unless you have a clear strategy on how to implement this on your own. You can delete them later if you wish.
-
-
+Install project modules:
+```
+npm i
+```
 
 ## Launch project and start coding: development mode
 ```
@@ -47,7 +51,7 @@ roc dev --help
 This prints all options that you can use to configure your current Roc application. They are defined by the extensions that we use; currently `roc-package-web-app-react` in this guide. The runtime `cli` parameters are compatible with `roc.config.js`. We recommend the use of `roc.config.js` for configuration that should be persisted in your project.
 
 ## Default project structure
-The basic template defined this for you upon `init`. Below is a summary of the __entire__ tree with all the optionals included.
+The basic template defined this for you upon `init`. Below is a summary of the __entire__ tree with all the optionals like data-fetching and redux included.
 
 ```
 ├── public
@@ -112,10 +116,18 @@ module.exports = {
 };
 ```
 
+
 ## Change application configuration
 Permanent configurations belonging to your application should be defined in `roc.config.js`.
 
 Temporary configuration changes can be done using the `cli` as seen from `roc dev --help`.
+
+## Run tests
+If you opted in to include Jest, you can run the included demonstration test.
+
+```
+roc test
+```
 
 ## Build production bundles
 ```
@@ -129,7 +141,9 @@ Be sure to run this to make a production-ready bundle of your application. Typic
 roc start
 ```
 
-Your app is now ready to serve real traffic.
+Your app is now ready to serve real traffic.  
+
+These common tasks are also aliased as npmscripts for your convenience; `npm start`, `npm test`, `npm run dev`, `npm run build`, `npm run lint`.
 
 # FAQ
 ## What does roc init do?
@@ -167,7 +181,7 @@ EXPOSE 3000
 ```
 
 ## I am a bit stuck, where can I find more information?
-Roc with `roc-package-web-app-react` installs and manages many libraries for you so that you can focus on your application. Below is a link outlining the most important libraries you should be familiar with when using `roc-package-web-app-react`.
+Roc with `roc-package-web-app-react` installs and manages many libraries for you so that you can focus on your application. Below is a link outlining the most important libraries you should be familiar with when using `roc-package-web-app-react`. They are provided to you automatically, and Roc does not modify their API.
 
 - [Browsersync](https://browsersync.io)
 - [Redux](https://github.com/rackt/redux)
@@ -175,3 +189,5 @@ Roc with `roc-package-web-app-react` installs and manages many libraries for you
 - [React Router](https://github.com/rackt/react-router)
 - [React Helmet](https://github.com/nfl/react-helmet)
 - [CSS Modules](https://github.com/css-modules/css-modules)
+
+We also recommend getting an understand of how Roc works on a general level. Reading the [documentation](https://github.com/rocjs/roc/tree/master/docs#table-of-contents) will get you started and provide an overview before you start reading the code.
