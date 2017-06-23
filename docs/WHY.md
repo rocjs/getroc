@@ -13,7 +13,8 @@ We want to spend our effort prototyping and creating awesome products. Roc helps
 
 ### Maintain large portfolios of similar projects using Roc
 
-Projects often fall within categories like "Rest API" or "Universal React App". Instead of wiring all the individual npm dependencies within each project from scratch or using a boilerplate generator to do so, Roc allows you to collect the repetitive module wiring within a single npm package and then re-use that easily in projects. This approach decouples the repetitive library-wiring and difficult configurations from your application and instead make the important parts configurable. This makes maintenance easier because
+Projects often fall within categories like "api" or "frontend". Instead of wiring all the individual npm dependencies within each project from scratch or using a boilerplate generator to do so, Roc allows you to collect the repetitive module wiring within a single npm package and then re-use that easily in projects. This approach decouples the repetitive library-wiring and difficult configurations from your application and instead make the important parts configurable. This makes maintenance easier because
 - Library combinations from npm and configuring them correctly happens in one single place.
 - Fix once, update and deploy everywhere.
 - Hide irrelevant quirks and complexities of integrating underlying npm modules.
+- Create your own Roc extensions and share them with others

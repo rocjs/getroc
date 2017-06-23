@@ -145,17 +145,11 @@ You _can_ also create your own extensions from scratch.
 
 Think of Roc as a complete and fully open source JavaScript framework provider and library composer.
 
-## How do I add a component?
-For now please look at the code, a more detailed example is coming.
-
-## How do I add a new route to my app?
-For now please look at the code, a more detailed example is coming.
-
 ## Do I have to use sass and CSS modules?
 We really like this and provide it  by default. However you are free to make other choices; we currently supply plugins for `less` and  `css+postss` as well.
 
 ## Why does Roc ecosystem currently use Webpack 1.x and Koa 1.x?
-Stability and productivity is the most important. However a dependency-update __is__ coming, and the good part is that it will require little effort from you to upgrade as a Roc user when it is available! Also we want to be community-driven, so please reach out to us if you want to help.
+Stability and productivity is the most important. However a dependency-update __is__ coming, and the good part is that it will require little effort from you to upgrade as a Roc user when it is available!
 
 ## Can I run Roc web-app-react apps in Docker?
 Yes, this works great. Here is an example `Dockerfile`
