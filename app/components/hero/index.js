@@ -12,7 +12,13 @@ export default class Hero extends React.Component {
                     <h3>Reusable building blocks for your projects</h3>
                     <code className={styles.install}>npm install -g roc@next</code>
 
-                    <iframe src="https://ghbtns.com/github-btn.html?user=rocjs&repo=roc&type=star&count=true&size=large" frameBorder="0" scrolling="0" width="160px" height="30px"></iframe>
+                    <iframe
+                        src="https://ghbtns.com/github-btn.html?user=rocjs&repo=roc&type=star&count=true&size=large"
+                        frameBorder="0"
+                        scrolling="0"
+                        width="160px"
+                        height="30px"
+                    />
                 </div>
             </div>
         );

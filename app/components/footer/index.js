@@ -9,7 +9,12 @@ export default class Footer extends React.Component {
                     An open source project by
                 </div>
                 <div className={styles.logo}>
-                    <a className={styles.sch} href="http://bytes.schibsted.com/" rel="Schibsted Products and Tech blog"></a>
+                    <a
+                        className={styles.sch}
+                        href="http://bytes.schibsted.com/"
+                        rel="Schibsted Products and Tech blog"
+                    >
+                    </a>
                 </div>
             </div>
         );

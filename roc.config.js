@@ -10,10 +10,14 @@ module.exports = {
             }
         },
         build: {
-            resources: ['app/styles/reset.scss', 'roc-package-web-app-react/styles/base.css', 'app/styles/markdown.scss'],
+            resources: [
+                'app/styles/reset.scss',
+                'roc-package-web-app-react/styles/base.css',
+                'app/styles/markdown.scss'
+            ],
             reducers: 'app/redux/reducers.js',
             redux: {
-                middlewares: 'app/redux/middlewares.js',
+                middlewares: 'app/redux/middlewares.js'
             },
             routes: 'app/routes/index.js'
         }

@@ -34,7 +34,8 @@ export default class Highlights extends React.Component {
                     <Highlight
                         image="automation"
                         title="Automation"
-                        text="Easy to use tooling provides commands like build, develop and test. Worry less about Webpack configurations."
+                        text="Easy to use tooling provides commands like build, develop and test.
+                        Worry less about Webpack configurations."
                     />
 
                     <Highlight
@@ -46,7 +47,8 @@ export default class Highlights extends React.Component {
                     <Highlight
                         image="dynamicconfig"
                         title="Dynamic Configuration"
-                        text="Dedicated configuration system that integrates directly with the Roc CLI makes your life simple."
+                        text="Dedicated configuration system that integrates directly with the Roc CLI
+                        makes your life simple."
                     />
                 </div>
             </div>
