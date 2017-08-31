@@ -21,7 +21,7 @@ mkdir react-app && cd react-app
 ```
 Bootstrap app starting point:
 ```
-roc init web-app-react wip
+roc init web-app-react
 ```
 We recommend you answer `Yes` to data-fetching, Redux and Jest testing when prompted, unless you have a clear strategy on how to implement this on your own. You can delete them later in your project if you wish.
 
@@ -39,7 +39,7 @@ While this command is running the following is at your disposal:
 - Manage your BrowserSync instance at http://localhost:3031. Connect as many different devices as you like.
 - Live reloading is active, and code can be live-edited and will be live-pushed to your browser.
 
-Your React app is fully universal, and if you opted in for data-fetching or Redux you will also have working demos of the most common use-cases in frontend oriented apps accessible in the menu: 
+Your React app is fully universal, and if you opted in for data-fetching or Redux you will also have working demos of the most common use-cases in frontend oriented apps accessible in the menu:
 
 ![image of roc in action](./screenshot.png)
 
@@ -151,7 +151,7 @@ These common tasks are also aliased as npmscripts for your convenience; `npm sta
 
 `web-app-react` (the first argument used in this guide) is an alias to `rocjs/roc-template-web-app-react`, a [repository location](https://github.com/rocjs/roc-template-web-app-react) on Github. This defines the initial project setup.  
 
-We also specify `wip`, which is a branch that contains the latest features. The initialized app is then set up to use the [roc-package-web-app-react](https://github.com/rocjs/roc-package-web-app-react) extension automatically. You can think of this as an optimized set of tools and libraries that aims to keep your project code simple and clean.
+The initialized app is then set up to use the [roc-package-web-app-react](https://github.com/rocjs/roc-package-web-app-react) extension automatically. You can think of this as an optimized set of tools and libraries that aims to keep your project code simple and clean.
 
 ### What if I am not happy with the result of init?
 You _can_ use your own template repository by running `roc init GITHUB_USER/REPO`.  
@@ -181,6 +181,8 @@ EXPOSE 3000
 ```
 
 ## I am a bit stuck, where can I find more information?
+We have written a [comprehensive user-guide](https://github.com/rocjs/roc-package-web-app-react/blob/master/GUIDE.md). Check it out!
+
 Roc with `roc-package-web-app-react` installs and manages many libraries for you so that you can focus on your application. Below is a link outlining the most important libraries you should be familiar with when using `roc-package-web-app-react`. They are provided to you automatically, and Roc does not modify their API.
 
 - [Browsersync](https://browsersync.io)

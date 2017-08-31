@@ -17,7 +17,7 @@
 .moreButton {
     display: inline-block;
     padding: 5px 40px;
-    margin: 30px 0px;
+    margin: 30px 0 0 0;
     font-family: 'Rajdhani';
     font-size: 20px;
     font-weight: 500;
@@ -34,6 +34,10 @@
     text-transform: uppercase;
     color: #5F7A91;
     text-decoration: none;
+}
+
+.lastMoreButton {
+  margin-bottom: 30px;
 }
 
 .moreButton:hover {

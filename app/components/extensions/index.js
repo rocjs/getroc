@@ -15,12 +15,22 @@ export default class Extensions extends React.Component {
                     <a href="https://github.com/rocjs/roc-package-web-app-react">
                         <img src={ reactRedux } />
                     </a>
-                    <a
-                        href="https://github.com/search?q=org%3Arocjs+roc-plugin+OR+roc-package"
-                        className={ styles.moreButton }
-                    >
-                        More extensions
-                    </a>
+                    <div>
+                        <a
+                            href="https://github.com/rocjs/roc-package-web-app-react/blob/master/GUIDE.md"
+                            className={ styles.moreButton }
+                        >
+                            Read React+Redux guide
+                        </a>
+                    </div>
+                    <div>
+                        <a
+                            href="https://github.com/search?q=org%3Arocjs+roc-plugin+OR+roc-package"
+                            className={ `${styles.moreButton} ${styles.lastMoreButton}` }
+                        >
+                            More extensions
+                        </a>
+                    </div>
                 </div>
             </div>
         );
