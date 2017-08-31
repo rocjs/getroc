@@ -1,0 +1,33 @@
+.splitter {
+    position: relative;
+    margin: 40px 0 40px 0;
+    @media (max-width: 420px) {
+        margin: 20px 0 20px 0;
+    }
+}
+
+.splitter:before {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    content: '';
+    border-top: 2px solid #000;
+    width: 40%;
+    @media (min-width: 1000px) {
+        display: block;
+    }
+}
+
+.splitter:after {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    content: '';
+    border-top: 2px solid #000;
+    width: 40%;
+    @media (min-width: 1000px) {
+        display: block;
+    }
+}

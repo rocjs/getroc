@@ -1,18 +1,17 @@
 #### Install
 Make sure you have node 4.x+ and npm 3.x+ on your system.
 ```
-npm install -g roc
+npm install -g roc@next
 ```
 
 #### Create redux and react project
 ```
-mkdir react-app
+roc new my-app-react
 ```
+
+#### Enter your new project
 ```
-cd react-app
-```
-```
-roc init web-app-react
+cd my-app-react
 ```
 
 #### Start development mode
