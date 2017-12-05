@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
 
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
@@ -8,7 +9,7 @@ import styles from './style.scss';
 
 export default class App extends React.Component {
     static propTypes = {
-        children: React.PropTypes.object.isRequired
+        children: PropTypes.object.isRequired
     }
 
     render() {

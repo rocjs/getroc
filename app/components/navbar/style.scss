@@ -1,33 +1,69 @@
 .navbar {
-    height: 60px;
-    background: #fff;
+    position: relative;
+    background: #254763;
+    border-bottom: 1px solid #fff;
+    overflow-x: scroll;
 
     ul {
         list-style: inside;
         list-style-type: none;
     }
+}
 
-    li {
-        display: inline-block;
-        margin-right: 30px;
+li.item {
+    color: #fff;
+    display: inline-block;
+    border-right: 1px solid #fff;
+}
+
+li.extra {
+    @media (max-width: 720px) {
+        display: none;
+    }
+}
+
+.gh {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+    img {
+        height: 40px;
+    }
+
+    @media (max-width: 720px) {
+        right: 15px;
+        img {
+            height: 20px;
+        }
     }
 }
 
 .a {
-    padding: 5px;
-    line-height: 20px;
-    color: rgb(29, 124, 142);
-    text-decoration: none;
-    font-family: 'Rajdhani';
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    height: 60px;
+    line-height: 60px;
     font-size: 20px;
     font-weight: 500;
+    text-decoration: none;
+    font-family: 'Rajdhani';
     text-transform: uppercase;
+
+    @media (max-width: 720px) {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 12px 0 12px;
+        font-size: 16px;
+    }
 }
 
 .a:hover {
-    color: rgb(22, 118, 136);
+    background: #5F7A91;
 }
 
 .active {
-    border-bottom: 2px solid rgb(29, 124, 142);
+    background: #fff;
+    color: #879CAD;
 }

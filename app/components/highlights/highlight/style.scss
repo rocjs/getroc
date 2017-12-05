@@ -1,10 +1,11 @@
 .highlight {
     vertical-align: top;
     display: inline-block;
-    padding: 10px 20px;
-    width: 50%;
+    padding: 0;
+    width: 33%;
     text-align: left;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
+    padding: 5px;
 
     h4 {
         margin-bottom: 10px;
@@ -13,69 +14,78 @@
 
 @media (max-width: 600px) {
     .highlight  {
-        width: 100%;
+        width: 95%;
     }
 }
 
+.header {
+    color: #fff;
+    font-size: 20px;
+    font-weight:350;
+    height: 50px;
+    line-height: 50px;
+    background: #254763;
+}
 
 .text {
     display: inline-block;
-    width: calc(100% - 65px);
+    background: #5F7A91;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 50;
+    color: #fff;
+    width: 100%;
+    min-height: 160px;
     text-align: left;
     vertical-align: top;
     font-weight: 300;
+    padding: 20px;
+    @media (max-width: 600px) {
+        min-height: auto;
+    }
 }
 
 .image {
-    vertical-align: top;
-    //float: left;
+    vertical-align: middle;
     text-align: left;
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-image: url('./assets/user36.svg');
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/cellphone.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
     margin-right: 15px;
+    margin-left: 15px;
 }
 
-.ossservice {
+.computing {
     composes: image;
-    background-image: url('./assets/cellphone.svg');
+    background-image: url('./assets/computing.png');
 }
+
 
 .consistency {
     composes: image;
-    background-image: url('./assets/cellphone106.svg');
+    background-image: url('./assets/cellphone.png');
 }
 
 .composition {
     composes: image;
-    background-image: url('./assets/computing29.svg');
+    background-image: url('./assets/head.png');
 }
 
 .automation {
     composes: image;
-    background-image: url('./assets/robots9.svg');
+    background-image: url('./assets/robot.png');
 }
 
 .developerux {
     composes: image;
-    background-image: url('./assets/internet54.svg');
+    background-image: url('./assets/website.png');
 }
 
 .dynamicconfig {
     composes: image;
-    background-image: url('./assets/three115.svg');
-}
-
-.reduceboiler {
-    composes: image;
-    background-image: url('./assets/user36.svg');
-}
-
-.reactredux {
-    composes: image;
-    background-image: url('./assets/website21.svg');
+    background-image: url('./assets/three.png');
 }

@@ -5,6 +5,11 @@
 roc dev --help
 ```
 
+##### Build documentation for project
+```js
+roc docs
+```
+
 ##### Build for production
 ```js
 roc build
@@ -14,13 +19,3 @@ roc build
 ```js
 roc start
 ```
-
-#### Questions
-
-##### Is this production ready?
-
-It is in active development, but please start experimenting today!
-
-##### Will this be abandoned tomorrow?
-
-No! VG have a long plan for Roc going forward.

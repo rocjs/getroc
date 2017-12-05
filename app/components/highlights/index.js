@@ -2,54 +2,54 @@ import React from 'react';
 
 import styles from './style.scss';
 import Highlight from './highlight';
+import Splitter from '../splitter';
 
 export default class Highlights extends React.Component {
     render() {
         return (
             <div className={styles.main}>
-                <div className="wrapper">
+                <Splitter>
                     <h3>Highlights</h3>
-                    <Highlight image="ossservice">
-                        <h4>OSS as a service</h4>
-                        Use established open source libraries from npm instantly without all the glue-code.
-                    </Highlight>
+                </Splitter>
 
-                    <Highlight image="consistency">
-                        <h4>Consistency</h4>
-                        Handle all your apps and components in a consistent way between teams.
-                    </Highlight>
+                <div className="wrapper">
+                    <Highlight
+                        image="composition"
+                        title="Composition"
+                        text="Roc bundles your favourite modern development technologies into extensions ready for use."
+                    />
 
-                    <Highlight image="composition">
-                        <h4>Composition</h4>
-                        Roc bundles your favourite modern development technologies
-                        into extensions ready for use.
-                    </Highlight>
+                    <Highlight
+                        image="computing"
+                        title="Instant productivity"
+                        text="Use established open source libraries from npm instantly without all the glue-code."
+                    />
 
-                    <Highlight image="automation">
-                        <h4>Automation</h4>
-                        Easy to use tooling provides commands like <em>build</em>, <em>develop</em> and <em>test</em>.
-                    </Highlight>
+                    <Highlight
+                        image="consistency"
+                        title="Consistency"
+                        text="Handle all your apps and components in a consistent way between projects and teams."
+                    />
 
-                    <Highlight image="developerux">
-                        <h4>Developer Experience</h4>
-                        Roc extensions provide the best developer experience out of the box.
-                    </Highlight>
+                    <Highlight
+                        image="automation"
+                        title="Automation"
+                        text="Easy to use tooling provides commands like build, develop and test.
+                        Worry less about Webpack configurations."
+                    />
 
-                    <Highlight image="dynamicconfig">
-                        <h4>Dynamic Configuration</h4>
-                        Dedicated configuration system that integrates directly with the Roc CLI makes your life simple.
-                    </Highlight>
+                    <Highlight
+                        image="developerux"
+                        title="Developer Experience"
+                        text="Roc extensions provide the best developer experience out of the box."
+                    />
 
-                    <Highlight image="reduceboiler">
-                        <h4>Reduce boilerplate</h4>
-                        The versioned extensions embed boilerplate so that it does not pollute your application.
-                    </Highlight>
-
-                    <Highlight image="reactredux">
-                        <h4>React + Redux</h4>
-                        One of the most developed extensions provides a great starting point for a universal web
-                        application using <em>React</em>, <em>React Router</em> and <em>Redux</em>.
-                    </Highlight>
+                    <Highlight
+                        image="dynamicconfig"
+                        title="Dynamic Configuration"
+                        text="Dedicated configuration system that integrates directly with the Roc CLI
+                        makes your life simple."
+                    />
                 </div>
             </div>
         );

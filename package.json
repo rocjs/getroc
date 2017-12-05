@@ -13,14 +13,18 @@
   "dependencies": {
     "html-loader": "0.4.0",
     "markdown-loader": "0.1.7",
-    "roc-package-web-app-react": "^1.0.0-alpha"
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "roc-package-web-app-react": "^2.0.0-alpha.1"
   },
   "devDependencies": {
     "babel-eslint": "6.0.2",
     "eslint": "2.6.0",
     "eslint-config-airbnb": "6.2.0",
+    "eslint-config-roc": "^0.1.0",
     "eslint-plugin-react": "4.2.3",
-    "roc-package-web-app-react-dev": "^1.0.0-alpha",
-    "roc-plugin-style-sass": "^1.0.0-alpha"
+    "roc-package-web-app-react-dev": "^1.1.0-alpha.0",
+    "roc-plugin-style-sass": "^1.0.0"
   }
 }
