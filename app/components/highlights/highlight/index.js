@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styles from './style.scss';
 
 export default class Highlight extends React.Component {
     static propTypes = {
-        image: React.PropTypes.string.isRequired,
-        title: React.PropTypes.string.isRequired,
-        text: React.PropTypes.string.isRequired
+        image: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        text: PropTypes.string.isRequired
     }
 
     render() {
