@@ -5,7 +5,7 @@ We will be focused on React and Redux based applications in this starter-guide. 
 Keep in mind that Roc is **not** tied to React and Redux extensions. Creating your own extension is also an option.
 
 ## Install Roc
-Make sure you have [Node.js](https://nodejs.org) 4.x or higher and [npm](https://www.npmjs.com/) 3.x or higher on your system.
+Make sure you have [Node.js](https://nodejs.org) 8.x or higher and [npm](https://www.npmjs.com/) 5.x or higher on your system.
 
 __Currently with official support for Mac, Linux and Windows.__
 
@@ -169,7 +169,7 @@ Stability and productivity is the most important. However a dependency-update __
 Yes, this works great. Here is an example `Dockerfile`
 
 ```dockerfile
-FROM node:7.10.0
+FROM node:8.9.4
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app/package.json
@@ -181,7 +181,7 @@ EXPOSE 3000
 ```
 
 ## I am a bit stuck, where can I find more information?
-We have written a [comprehensive user-guide](https://github.com/rocjs/roc-package-web-app-react/blob/master/GUIDE.md). Check it out!
+We have written a [comprehensive user-guide](https://github.com/rocjs/extensions/blob/master/packages/roc-package-web-app-react/GUIDE.md). Check it out!
 
 Roc with `roc-package-web-app-react` installs and manages many libraries for you so that you can focus on your application. Below is a link outlining the most important libraries you should be familiar with when using `roc-package-web-app-react`. They are provided to you automatically, and Roc does not modify their API.
 
