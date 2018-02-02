@@ -1,5 +1,5 @@
 #### Install
-Make sure you have node 4.x+ and npm 3.x+ on your system.
+Make sure you have node 8.x+ and npm 5.x+ on your system.
 ```
 npm install -g roc@next
 ```
